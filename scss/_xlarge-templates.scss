@@ -1,0 +1,39 @@
+/*
+  --------------
+  PÁGINAS ESPECÍFICAS
+  --------------
+*/
+
+
+/*
+  --------------
+  ELEMENTOS e CLASSES
+  --------------
+*/
+
+
+/* ------- PRODUTO ------- */
+.detalhes-produto {
+  .dados { width: calc(100% - 480px); overflow: hidden; }
+  [itemprop=offers] { float: left; }
+  .compra { float: right; width: 255px; padding-top: $espaco; }
+  .indique + .dropdown { margin-left: -130px; }
+  .cep { float: left; clear: none; width: 100%;
+    p { display: inline;
+      &:first-child { margin-right: 10px; }
+    }
+    a { float: right; line-height: 30px; }
+  }
+  .descricao { clear: both; }
+} // .detalhes-produto
+
+
+/* ------- CARRINHO DE COMPRAS ------- */
+.carrinho {
+  .cep {
+    p { display: inline;
+      &:first-child { margin-right: 10px; }
+    }
+    a { float: right; line-height: 30px; }
+  }
+} // .carrinho

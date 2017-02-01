@@ -1,0 +1,43 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+ 
+ #RewriteCond %{HTTP_HOST} ^plander.com.br/ibolt/homologacao$
+ #RewriteRule (.*) http://www.plander.com.br/ibolt/homologacao/$1 [R=301,L] 
+ 
+ #RewriteCond %{HTTP_HOST} ^http://plander.com.br/ibolt/homologacao$
+ #RewriteRule (.*) http://www.plander.com.br/ibolt/homologacao/$1 [R=301,L] 
+ 
+ ###########################################################################
+ 
+ 
+ RewriteRule ^index/?$ /ibolt/homologacao/index.php [NC,L]
+ 
+ RewriteRule ^quemSomos/?$ /ibolt/homologacao/quemSomos.php [NC,L]
+ RewriteRule ^faleConosco/?$ /ibolt/homologacao/faleConosco.php [NC,L]
+ RewriteRule ^produtosPlander/?$ /ibolt/homologacao/produtosPlander.php [NC,L]
+ RewriteRule ^produtosZion/?$ /ibolt/homologacao/produtosZion.php [NC,L]
+ RewriteRule ^politicas/?$ /ibolt/homologacao/politicas.php [NC,L]
+ 
+ RewriteRule ^paginaEmailEnviado/([a-z]+)/?$ /ibolt/homologacao/paginaEmailEnviado.php?tipo=$1 [NC,L]
+ 
+ RewriteRule ^produtos/?$ /ibolt/homologacao/produtos.php [NC]
+ RewriteRule ^produtos/([a-z]+)/([A-Za-z0-9\-\ ]+)/?$ /ibolt/homologacao/produtos.php?origem=$1&conteudo=$2 [NC]
+ RewriteRule ^produtos/([a-z]+)/([A-Za-z0-9\-\ ]+)/([A-Za-z\ó0-9\-\ ]+)/?$ /ibolt/homologacao/produtos.php?origem=$1&conteudo=$2&conteudo2=$3 [NC]
+ RewriteRule ^produtos/([a-z]+)/([A-Za-z0-9\-\ ]+)/([A-Za-z0-9\-\ ]+)/([A-Za-z0-9\-\ ]+)/([0-9]+)/?$ /ibolt/homologacao/produtos.php?origem=$1&conteudo=$2&conteudo2=$3&conteudo3=$4&conteudo4=$5 [NC]
+ RewriteRule ^produtos/([a-z]+)/([A-Za-z0-9\-\ ]+)/([A-Za-z0-9\-\ ]+)/([A-Za-z0-9\-\ ]+)/([0-9]+)/([A-Za-z0-9\-\ ]+)/([0-9]+)/?$ /ibolt/homologacao/produtos.php?origem=$1&conteudo=$2&conteudo2=$3&conteudo3=$4&conteudo4=$5&conteudo5=$6&conteudo6=$7 [NC] 
+ RewriteRule ^produtos/([a-z]+)/([A-Za-z0-9\-\ ]+)/([A-Za-z0-9\-\ ]+)/([A-Za-z0-9\-\ ]+)/([A-Za-z0-9\-\ ]+)/([0-9]+)/?$ /ibolt/homologacao/produtos.php?origem=$1&conteudo=$2&conteudo2=$3&conteudo3=$4&conteudo4=$5&conteudo5=$6 [NC]
+ 
+ RewriteRule ^produto/([A-Za-z0-9\-\ ]+)/([0-9]+)/?$ /ibolt/homologacao/produto.php?descricao=$1&cod_prod_grade=$2 [NC]
+ RewriteRule ^produto/([0-9]+)/?$ /ibolt/homologacao/produto.php?cod_prod_grade=$1 [NC]
+ 
+ RewriteRule ^carrinho/?$ /ibolt/homologacao/carrinho.php [NC,L]
+ RewriteRule ^carrinhoCadastro/?$ /ibolt/homologacao/carrinhoCadastro.php [NC,L]
+ RewriteRule ^carrinhoCadastro/([a-z]+)/?$ /ibolt/homologacao/carrinhoCadastro.php?acao=$1 [NC,L]
+ RewriteRule ^carrinhoConfirmacao/?$ /ibolt/homologacao/carrinhoConfirmacao.php [NC,L]
+ RewriteRule ^carrinhoEnderecoEntrega/?$ /ibolt/homologacao/carrinhoEnderecoEntrega.php [NC,L]
+ RewriteRule ^carrinhoLogin/?$ /ibolt/homologacao/carrinhoLogin.php [NC,L]
+ RewriteRule ^carrinhoLogin/([0-1]+)/?$ /ibolt/homologacao/carrinhoLogin.php?voltar=$1 [NC,L]
+ RewriteRule ^carrinhoPagamento/?$ /ibolt/homologacao/carrinhoPagamento.php [NC,L]
+ RewriteRule ^carrinhoSenha/?$ /ibolt/homologacao/carrinhoSenha.php [NC,L]
+ 
+</IfModule>

@@ -1,0 +1,66 @@
+/*
+  --------------
+  XLARGE - Dispositivos com telas maiores
+  --------------
+*/
+
+
+/*
+  --------------
+  ELEMENTOS e CLASSES
+  --------------
+*/
+
+
+/* ------- ELEMENTOS ------- */
+
+
+
+/* ------- CLASSES ------- */
+
+  .swiper-container {
+    &.destaque { height: 382px; }
+  }
+
+  .produto p[itemprop=name] { height: 126px; }
+
+
+/*
+  --------------
+  ESTRUTURA
+  --------------
+*/
+
+
+/* ------- TOPO ------- */
+.topo {
+  .conta { right: 140px; }
+  .carrinho { right: $espaco; }
+} // .topo
+
+
+/* ------- CONTEÚDO ------- */
+
+
+
+/* ------- RODAPÉ ------- */
+.rodape {
+  .banners img { max-width: none; }
+
+  .mapa {
+    .limites > div {
+      & + div { margin-left: 110px; }
+      &:last-of-type { margin: 0 0 0 630px; padding: 0 0 0 100px;
+        .seguranca {
+          li { margin-right: 50px; }
+        }
+      }
+    }
+  }
+} // .rodape
+
+
+
+
+// páginas específicas
+@import "xlarge-templates"; // estilos para páginas específicas

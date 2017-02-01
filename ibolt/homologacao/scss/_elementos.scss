@@ -1,0 +1,93 @@
+/*
+  --------------
+  BIBLIOTECA DE CLASSES
+  --------------
+*/
+
+
+/* ------- BREAKPOINTS ------- */
+//$bp-small : 24em;
+$bp-med: 37.5em;
+$bp-large: 62.5em;
+$bp-xl : 80em;
+
+
+/* ------- PALETA DE CORES ------- */
+$cor_textos: #313131; // textos de conteúdo
+$cor_body: #FAFAFA; // cor do fundo do site
+$azul_claro: #4A90E2;
+$azul: #005B9D;
+$azul_escuro: #003F6A;
+$amarelo: #FCE163;
+$laranja: #FCC263;
+$vermelho: #EF5050;
+$cinza: #E2E2E2;
+$cinza_claro: #F1F1F1;
+$verde: #6EB81D;
+
+
+/* ------- PADROES ------- */
+$espaco: 30px;
+
+
+/* ------- CLASSES ------- */
+
+  .hide { display: none; }
+
+  @mixin link { color: $azul_claro;
+    &:hover { color: $vermelho; }
+  }
+
+  /* alinhamentos */
+  p {
+    &.direita { text-align: right; }
+    &.esquerda { text-align: left; }
+  }
+  .centro { text-align: center; }
+
+  // image replacement
+  .rpl { font: 0/0 a !important; color: transparent !important; }
+
+    @mixin rpl($width, $height, $image: null, $display: null, $color: null, $position: null, $repeat: null, $size: null) {
+      width: $width;
+      height: $height;
+      @if $image != null { background-image: url('#{$image}'); }
+      @if $color != null { background-color: $color; }
+      @if $position != null { background-position: $position; }
+      @if $repeat != null { background-repeat: $repeat; }
+        @else { background-repeat: no-repeat; }
+      @if $display != null { display: $display; }
+      @if $size != null { background-size: $size; }
+      @extend .rpl;
+    }
+
+  // fontes em "rem" com fallback para px - ex: @include font-size(14px)
+  @function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+  }
+
+  @mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+  }
+
+  // quebra texto em linhas (palavras grandes)
+  .wrap {
+    text-wrap: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word;
+  }
+
+  // escondendo elementos sem prejudicar leitor de tela - ex: @extend %visuallyhidden
+  %visuallyhidden {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+  }

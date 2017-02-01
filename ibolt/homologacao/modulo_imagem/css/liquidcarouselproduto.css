@@ -1,0 +1,14 @@
+.liquid {
+	width:774px;
+}
+.liquid .next {
+	display:block;
+	height:180px;
+	width:24px;
+	background-image:url(../images/_plander_produtos_viola_v2_49.jpg);
+	float:left;
+	cursor:pointer;
+}
+.liquid ul li {
+	width:219px;
+}

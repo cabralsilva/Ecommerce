@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /error
+Disallow: /trash
+Disallow: /uploads

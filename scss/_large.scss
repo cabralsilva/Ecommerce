@@ -1,0 +1,205 @@
+/*
+  --------------
+  LARGE - Dispositivos com telas grandes
+  --------------
+*/
+
+
+/*
+  --------------
+  ELEMENTOS e CLASSES
+  --------------
+*/
+
+
+/* ------- ELEMENTOS ------- */
+body:after { content: 'large'; }
+
+h2 { font-size: 2.25rem;
+  & + p { margin-bottom: 20px; font-size: 1.06rem; }
+}
+
+  /* forms */
+  form {
+    .medio, .select.medio { width: 242px; }
+    .grande { width: 423px; }
+  }
+
+
+
+/* ------- CLASSES ------- */
+
+  .swiper-container { max-width: 1280px; margin: 0 auto;
+    span[role] { position: absolute; top: 50%; display: block; cursor: pointer; z-index: 2; }
+    .seguinte { right: 1px;
+      svg { transform: rotate(180deg); }
+    }
+
+    &.destaque { height: 382px;
+      .swiper-pagination { bottom: $espaco; }
+    }
+
+    &.marcas {
+      .swiper-slide { padding: 0 15px; }
+      span[role] { margin-top: -7px; }
+    }
+
+    &.produtos {
+      &:first-child { padding-top: 0; }
+      span[role] { width: 68px; height: 99px; margin-top: -50px; background: rgba(216, 216, 216, .58); line-height: 95px; text-align: center; opacity: 0; visibility: hidden; transition: all .3s;
+        svg { display: inline-block; vertical-align: middle; }
+        .icone { color: #818181; }
+      }
+      &:hover span[role] { opacity: 1; visibility: visible; }
+    }
+  } // .swiper-container
+
+  .produto { width: 232px;
+    img { min-height: 194px; }
+    p[itemprop=name] { min-height: 66px; height: 166px; font-size: 1rem; }
+    .de, em { font-size: .75rem; }
+    .por { font-size: 1rem; }
+  }
+
+  .zoomContainer { margin: $espaco / 2 0 0 $espaco / 2; }
+
+
+/*
+  --------------
+  ESTRUTURA
+  --------------
+*/
+
+
+.limites { max-width: 1280px; margin: 0 auto; padding: 0; }
+
+
+/* ------- TOPO ------- */
+.topo { position: relative; padding: $espaco 0 102px;
+  .limites { padding-right: $espaco; padding-left: $espaco; }
+  .limites:first-child { position: relative; padding-top: 108px;
+    &:before { content: ""; position: absolute; top: 63px; left: $espaco; width: calc(100% - 60px); height: 1px; background: $cinza; }
+  }
+  h1 { position: relative; top: -20px; float: left; width: 307px; max-width: none; height: 80px; margin-bottom: 0; }
+  .menu { display: none; }
+
+  ul.institucional, ul.contatos { position: absolute; display: block;
+    li, a, .telefone, .whatsapp { display: inline-block; padding: 0; border: 0; }
+    .telefone, .whatsapp { margin-left: $espaco / 2; font-size: 1.12rem; }
+    li { margin-right: $espaco / 2;
+      &:last-child { margin-right: 0; }
+    }
+    a { text-transform: lowercase;
+      &:hover { color: $vermelho; }
+    }
+  }
+  ul.institucional { top: 5px; }
+  ul.contatos { top: 0; right: $espaco; }
+
+  nav { position: absolute; top: 201px; left: 0; width: 100%; max-height: none; margin: 0; overflow: visible;
+    & > ul { position: relative; height: 55px; background: url(../imagens/topo-nav-bg.png) center repeat-x; text-align: center; }
+    .drop { display: inline-block; margin-right: -4px; text-align: center; color: #fff;
+      & > a { display: inline-block; padding: 0 20px; background: transparent; font-size: 1.25rem; line-height: 55px; font-weight: 300;
+        svg { transform: rotate(-90deg); }
+      }
+
+      .dropdown { left: $espaco; display: flex; flex-wrap: wrap; width: calc(100% - 60px); padding: $espaco $espaco + 232px $espaco $espaco; border-width: 0 1px 1px; border-style: solid; border-color: $cinza; text-align: left;
+        .subcategoria { min-width: 40%; margin-bottom: $espaco * 2; padding-right: 100px; vertical-align: top;
+          & > ul { display: flex; max-height: 380px; flex-flow: column wrap;
+            li { padding-right: 20px; }
+            & > li > a { font-weight: bold; }
+          }
+        }
+        .produto { position: absolute; top: 0; right: 0; }
+        h3 { margin-bottom: $espaco / 2; font-size: 1.43rem; text-transform: uppercase;
+          a { @include link; }
+        }
+        li { line-height: 2;
+          a:hover { color: $vermelho; }
+          li { font-size: .75rem;
+            &:before { content: ""; display: inline-block; width: 5px; height: 5px; margin-right: 5px; background: #BDBDBD; vertical-align: middle; }
+          }
+        }
+      }
+
+      &:hover {
+        & > a { background: #fff;
+          &, .icone { color: $azul; }
+          svg { transform: rotate(90deg); }
+        }
+        .dropdown { max-height: 2000px; visibility: visible; opacity: 1; z-index: 1000; }
+      }
+    }
+  }
+
+  .conta, .carrinho { position: absolute; }
+  .conta { right: 140px;
+    .dropdown { right: 0; left: auto; }
+  }
+  .carrinho { left: calc(100% - 120px); padding-top: 8px; }
+
+  form { clear: none; margin-left: 334px; }
+  input[type=search] { width: calc(100% - 296px); }
+} // .topo
+
+
+/* ------- CONTEÚDO ------- */
+.conteudo {
+  .limites { padding: $espaco; }
+  section.alt { margin-bottom: 0;
+    a.esquerda, a.direita { width: 594px; max-width: 49%; }
+    a.direita { margin-left: 0; }
+  }
+
+  ol.breadcrumb { margin-bottom: $espaco; }
+
+  aside.coluna { float: left; width: 280px;
+    & > div { padding: $espaco $espaco / 2 $espaco;
+      & > ul:not(:last-child) { margin-bottom: $espaco; }
+    }
+    h3 { font-size: 1.43rem; }
+    .filtros { position: static; padding: $espaco 0 0; border-width: 1px 0 0; }
+    .banner { position: static; }
+  }
+
+  aside.coluna + section { margin-left: 310px; }
+
+  div.cep { clear: both;
+    table { margin-top: $espaco / 2; }
+  }
+
+  .google-maps { padding-bottom: 30%; }
+} // .conteudo
+
+
+/* ------- RODAPÉ ------- */
+.rodape {
+  .limites.centro { padding: $espaco * 2 0; }
+
+  .banners {
+    img { max-width: 23%; margin-left: 12px;
+      &:first-child { margin-left: 0; }
+    }
+  }
+
+  .mapa { padding: $espaco; overflow: hidden;
+    .limites > img { display: block; }
+    .limites > div {
+      &:first-of-type { width: auto; }
+      & + div { float: left; margin-left: 50px; }
+      &:last-of-type { float: none; clear: none; margin: 0 0 0 510px; padding: 0 0 0 40px; border-width: 0 0 0 1px; border-style: solid; border-color: $cinza;
+        .seguranca { max-width: none; text-align: left;
+          li { width: auto; margin-right: 20px; }
+        }
+      }
+    }
+  }
+
+  .copyright { clear: both; padding: $espaco;
+    span { display: inline; }
+  }
+} // .rodape
+
+
+// páginas específicas
+@import "large-templates"; // estilos para páginas específicas

@@ -1,0 +1,194 @@
+/*
+  --------------
+  PÁGINAS ESPECÍFICAS
+  --------------
+*/
+
+
+/*
+  --------------
+  ELEMENTOS e CLASSES
+  --------------
+*/
+
+
+/* ------- CATEGORIA ------- */
+aside.coluna + section {
+  header { height: 200px; padding-top: 0; padding-left: $espaco;
+    h2 { position: absolute; top: 50%; transform: translateY(-50%); }
+  }
+}
+
+
+/* ------- PRODUTO ------- */
+.detalhes-produto {
+  .imagem { float: left; width: 40%;
+    .swiper-slide { padding: 5px; }
+  }
+  h2[itemprop] { float: right; width: 55%; }
+  [itemprop=offers], .compra { margin-left: 45%; }
+} // .detalhes-produto
+
+
+/* ------- SEUS DADOS ------- */
+form.conta {
+  input:not([class]) { max-width: 500px; }
+} // form.conta
+
+
+/* ------- FALE CONOSCO ------- */
+form.contato fieldset { width: 500px;
+  input[type=email] { width: 240px; }
+} // form.contato
+
+.contatos { overflow: hidden;
+  div { width: 48%; }
+  .esquerda { margin-right: 2%; }
+} // .contatos
+
+
+/* ------- CARRINHO DE COMPRAS ------- */
+.carrinho {
+
+  .topo {
+    ul.contatos {
+      li { display: inline-block; margin-right: 10px; border: 0;
+        &, a { padding: 0; }
+        &:last-child { margin-right: 0; }
+      }
+    }
+  } // .topo
+
+  .conteudo { overflow: hidden;
+    header {
+      li { width: 115px; padding: 0 20px;
+        &:after { right: 0; margin-right: -15px; }
+        &:nth-child(even) { margin-right: -4px;
+          &:after { display: inline-block; }
+        }
+        &:last-child:after { display: none; }
+      }
+    } // header
+
+    table.compras {
+      thead { background: transparent;
+        &, th { border: 0; }
+        th { font-size: .87rem; font-weight: 600; text-transform: none; text-align: center;
+          &:first-child { text-align: left; }
+          &:last-child { text-align: right; }
+        }
+      }
+      tbody {
+        tr { border-width: 0 0 2px; border-color: $cor_body; }
+        td { text-align: center;
+          & + td { width: 115px; }
+          &:last-child { text-align: right; }
+          p { display: block; }
+        }
+      }
+      th p { padding-top: 0; }
+      a { margin: 5px 0 0; }
+    } // table.compras
+
+    div.cep { float: left; width: 58%;
+      table { max-width: 490px;
+        th { width: 80px; }
+      }
+    }
+
+    .botao.voltar { clear: left; display: block; width: 256px; }
+
+    .total { float: right; width: 37%; }
+  } // .conteudo
+
+  .rodape { text-align: center;
+    .limites div { display: inline-block; text-align: left; vertical-align: top; }
+  } // .rodape
+
+} // .carrinho
+
+
+  /* ------- LOGIN ------- */
+  .carrinho {
+    form.login {
+      input.pwd {
+        & + label { display: inline-block; }
+      }
+    }
+  } // .carrinho
+
+
+  /* ------- PAGAMENTO ------- */
+  .carrinho {
+    .resumo-pedido {
+      div.esquerda, div.direita { max-width: 48%; }
+
+      table.compras.tablesaw-stack {
+        tbody {
+          td { text-align: left; }
+          td + td { float: none; width: auto; }
+        }
+      }
+    } // .resumo-pedido
+
+    fieldset.opcoes-entrega, fieldset.formas {
+      li { display: inline-block; width: auto; vertical-align: top; }
+      label { display: block; width: auto; padding: $espaco $espaco $espaco 45px; }
+    }
+
+    fieldset.opcoes-entrega {
+      li { width: 47%; }
+      label { height: 145px;
+        input { margin-top: 0; }
+      }
+    }
+
+    fieldset.formas {
+      label { height: auto; }
+    }
+
+    fieldset.pagamento { max-width: 590px;
+      .select:not(.pequeno) { display: inline-block; width: auto; }
+      button { margin-top: $espaco * 2; }
+    }
+  } // .carrinho
+
+
+  /* ------- CONFIRMAÇÃO ------- */
+  .carrinho {
+    .confirmacao { margin-bottom: $espaco * 2; }
+  } // .carrinho
+
+
+// telas maiores de 700px
+@media only screen and (min-width: 43.75rem) {
+
+  /* ------- CATEGORIA ------- */
+  aside.coluna + section {
+    .produto { width: 32%;
+      &, &:nth-child(odd) { margin: 0 -4px $espaco / 2 2%; }
+      &:nth-child(3n+0) { margin-left: 0; }
+    }
+  }
+
+  /* ------- CARRINHO DE COMPRAS - LOGIN ------- */
+  .carrinho {
+    form.novo-cliente, form.login { width: 47%; }
+    form.novo-cliente { float: left; }
+    form.login { float: right; }
+  } // .carrinho
+
+}
+
+
+// telas maiores de 749px
+@media only screen and (min-width: 46.8rem) {
+
+  /* ------- PRODUTO ------- */
+  .detalhes-produto {
+    ul.parcelas { column-count: 2; column-width: 45%; column-gap: 25px;
+      li { position: relative; }
+    }
+  } // .detalhes-produto
+
+}

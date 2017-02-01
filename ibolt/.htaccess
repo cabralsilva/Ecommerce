@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Informe o login e senha para acessar as pastas:"
+AuthUserFile /storage/3/ac/52/plander2/public_html/ibolt/.htpasswd
+Require valid-user

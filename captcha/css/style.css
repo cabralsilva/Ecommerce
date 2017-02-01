@@ -1,0 +1,34 @@
+/*author:     Bradda Comunicação Interativa
+  date:      
+  customer:     
+*/
+
+.ok, .opa {
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+text-align:center;
+padding:10px;
+color:#fff;
+}
+
+.ok {
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+margin:0 auto;
+width:960px;
+background:#090;
+}
+
+.opa {
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+background:#f30;
+}
+
+div.error {
+color:#E96416;
+}
+
+
+
+

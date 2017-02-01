@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" height="17px" width="24px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 17">
+ <title>Group</title> 
+ <g id="Desktop" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+  <g id="Produto" transform="translate(-1034 -625)" fill="currentColor" sketch:type="MSArtboardGroup">
+   <g id="detalhes" transform="translate(28 374)" sketch:type="MSLayerGroup">
+    <g id="mail" sketch:type="MSShapeGroup" transform="translate(1006 251)">
+     <g id="Group">
+      <path id="Shape" d="m12 11.9l-2.9691-2.5772-8.4892 7.2162c0.30859 0.284 0.7252 0.461 1.1846 0.461h20.548c0.457 0 0.872-0.177 1.179-0.461l-8.484-7.2162-2.969 2.5772z"/>
+      <path id="Shape" d="m23.458 0.4607c-0.308-0.2856-0.723-0.4607-1.184-0.4607h-20.548c-0.4574 0-0.87229 0.1768-1.1809 0.4641l11.455 9.7359 11.458-9.7393z"/>
+      <path id="Shape" d="m0 1.4926v14.123l8.2851-6.9817-8.2851-7.1417z"/>
+      <path id="Shape" d="m15.715 8.6343l8.285 6.9817v-14.128l-8.285 7.1463z"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

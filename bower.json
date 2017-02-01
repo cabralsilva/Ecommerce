@@ -1,0 +1,30 @@
+{
+  "name": "Plander",
+  "version": "1",
+  "authors": [
+    "Carlos Eduardo de Souza <carlos@coopers.pro>"
+  ],
+  "description": "Novo portal Plander",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://coopers.pro",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "Snap.svg": "snap.svg#~0.4.1",
+    "Swiper": "swiper#~3.1.5",
+    "ez-plus": "elevatezoom-plus#~1.1.14",
+    "wtf-forms": "~2.2.0",
+    "hideshowpassword": "~2.0.8",
+    "filament-tablesaw": "~1.0.4",
+    "magnific-popup": "~1.0.0",
+    "picturefill": "~3.0.1"
+  }
+}

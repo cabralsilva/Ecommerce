@@ -1,0 +1,276 @@
+<br><br>
+<table cellpadding="0" cellspacing="0" align="center" width="900">
+	<tr>
+		<td>
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td class="header_line"><!--lang_stats_visitors--></td>
+					<td class="header_line" align="right"><script>document.write(new Date(2017,0,4,0, 00, 00, 0).toLocaleDateString());</script></td>
+				</tr>
+				<tr>
+					<td class="header_nav_line">&nbsp;&nbsp;11 <!--lang_stats_visitors--> (<em>unique</em>)</td>
+					<td class="header_nav_line" align="right">Status:&nbsp;&nbsp;<!--lang_stats_status_closed-->&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table class="bt_values" cellspacing="0" cellpadding="2" width="100%">
+				<tr>
+					<td class="bt_column_header" width="40" align="center"><!--lang_stats_pages--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_entrance--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_exit--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_country--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_city--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_browser--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_system--></td>
+					<td class="bt_column_header" width="25">&nbsp;</td>
+				</tr>
+				<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_1');"><b>1</b></a></td>
+    <td align="center">00:19:58</td>
+    <td align="center">00:19:59</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP>Itaguara</td>
+    <td NOWRAP>Chrome 55</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vs" align="right"><div class="ico_info" onclick="showInfoBox('Conquest TelecomunicaÃ§Ãµes Ltda','4','1','187.108.xxx.xxx','','a7918ceb5b',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_11">
+		<td align="center">1</td>
+		<td align="center">00:19:58</td>
+		<td align="center">00:22:09</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_2');"><b>8</b></a></td>
+    <td align="center">08:34:51</td>
+    <td align="center">11:59:00</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP>Macaé</td>
+    <td NOWRAP>Chrome 49</td>
+    <td NOWRAP>Windows XP</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('Datacorpore Datacenter','1','1','177.223.xxx.xxx','','bf65332b7d',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_21">
+		<td align="center">1</td>
+		<td align="center">08:34:51</td>
+		<td align="center">08:37:03</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_22">
+		<td align="center">2</td>
+		<td align="center">11:01:14</td>
+		<td align="center">11:03:25</td>
+		<td colspan="5"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_23">
+		<td align="center">3</td>
+		<td align="center">11:12:01</td>
+		<td align="center">12:01:10</td>
+		<td colspan="5"><!--lang_stats_browser--> 3:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_24">
+		<td align="center">4</td>
+		<td align="center">11:41:28</td>
+		<td align="center">11:43:38</td>
+		<td colspan="5"><!--lang_stats_browser--> 4:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_25">
+		<td align="center">5</td>
+		<td align="center">11:42:14</td>
+		<td align="center">11:44:24</td>
+		<td colspan="5"><!--lang_stats_browser--> 5:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_26">
+		<td align="center">6</td>
+		<td align="center">11:44:34</td>
+		<td align="center">11:46:44</td>
+		<td colspan="5"><!--lang_stats_browser--> 6:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_27">
+		<td align="center">7</td>
+		<td align="center">11:48:57</td>
+		<td align="center">11:51:07</td>
+		<td colspan="5"><!--lang_stats_browser--> 7:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_28">
+		<td align="center">8</td>
+		<td align="center">11:58:29</td>
+		<td align="center">12:00:40</td>
+		<td colspan="5"><!--lang_stats_browser--> 8:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_3');"><b>1</b></a></td>
+    <td align="center">11:41:24</td>
+    <td align="center">11:41:25</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP><!--lang_stats_unknown--></td>
+    <td NOWRAP>Chrome 55</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','189.38.xxx.xxx','','35d31d3d45',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_31">
+		<td align="center">1</td>
+		<td align="center">11:41:24</td>
+		<td align="center">11:43:35</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_4');"><b>1</b></a></td>
+    <td align="center">12:18:14</td>
+    <td align="center">14:59:03</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP><!--lang_stats_unknown--></td>
+    <td NOWRAP>Chrome 55</td>
+    <td NOWRAP>Windows 10</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','187.95.xxx.xxx','','1075cbda08',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_41">
+		<td align="center">1</td>
+		<td align="center">12:18:14</td>
+		<td align="center">15:01:09</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_5');"><b>1</b></a></td>
+    <td align="center">13:18:32</td>
+    <td align="center">13:30:04</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP>Pouso Alegre</td>
+    <td NOWRAP>Chrome 55</td>
+    <td NOWRAP>Windows 10</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('Telemar Norte Leste S.a.','1','1','200.149.xxx.xxx','','8ac6c98fd9',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_51">
+		<td align="center">1</td>
+		<td align="center">13:18:32</td>
+		<td align="center">13:32:14</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_6');"><b>1</b></a></td>
+    <td align="center">13:35:01</td>
+    <td align="center">13:35:01</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP>Rio De Janeiro</td>
+    <td NOWRAP>FireFox 50</td>
+    <td NOWRAP>Ubuntu (Linux)</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('Net Virtua','1','1','189.122.xxx.xxx','','88817c82aa',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_61">
+		<td align="center">1</td>
+		<td align="center">13:35:01</td>
+		<td align="center">13:37:11</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_7');"><b>1</b></a></td>
+    <td align="center">15:58:50</td>
+    <td align="center">15:58:50</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP>Belem</td>
+    <td NOWRAP>Chrome 55</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vs" align="right"><div class="ico_info" onclick="showInfoBox('Prodepa - Processamento De Dados Do Para','2','1','177.74.xxx.xxx','','3e2857eedb',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_71">
+		<td align="center">1</td>
+		<td align="center">15:58:50</td>
+		<td align="center">16:01:00</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_8');"><b>2</b></a></td>
+    <td align="center">16:48:26</td>
+    <td align="center">17:54:43</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP>Jundiaí</td>
+    <td NOWRAP>Chrome 55</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('Pombonet TelecomunicaÃ§Ãµes E InformÃ¡tica','1','1','186.251.xxx.xxx','','15f8f1a79a',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_81">
+		<td align="center">1</td>
+		<td align="center">16:48:26</td>
+		<td align="center">17:56:53</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_82">
+		<td align="center">2</td>
+		<td align="center">16:48:26</td>
+		<td align="center">17:56:53</td>
+		<td colspan="5"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_9');"><b>1</b></a></td>
+    <td align="center">22:52:18</td>
+    <td align="center">22:52:19</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP>Caparaó</td>
+    <td NOWRAP>Chrome 55</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('Acesse ComunicaÃ§Ã£o Ltda','1','1','187.94.xxx.xxx','','21efa37e96',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_91">
+		<td align="center">1</td>
+		<td align="center">22:52:18</td>
+		<td align="center">22:54:29</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_10');"><b>1</b></a></td>
+    <td align="center">23:43:44</td>
+    <td align="center">23:43:45</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP>Porto Uniao</td>
+    <td NOWRAP>Safari 6</td>
+    <td NOWRAP>MAC OS X 10.1 (Puma)</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('Brasil Telecom S.a.','1','1','200.181.xxx.xxx','','fd43e62d8a',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_101">
+		<td align="center">1</td>
+		<td align="center">23:43:44</td>
+		<td align="center">23:45:55</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_11');"><b>1</b></a></td>
+    <td align="center">23:55:37</td>
+    <td align="center">23:59:40</td>
+    <td NOWRAP>Brazil</td>
+    <td NOWRAP>Curitiba</td>
+    <td NOWRAP>Chrome 55</td>
+    <td NOWRAP>Windows 8</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('Copel Telecom','1','1','187.95.xxx.xxx','','e92f89a700',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_111">
+		<td align="center">1</td>
+		<td align="center">23:55:37</td>
+		<td align="center">00:01:50</td>
+		<td colspan="5"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.plander.com.br/livezilla/chat.php" target="_blank"><b>http://www.plander.com.br/livezilla/chat.php</b></a></td>
+	</tr>
+
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>
+<script type="text/javascript">
+function showInfoBox(_isp, _visits, _visits_day, _ip, _host, _id, _parent)
+{
+if(ibCurrent != _parent)
+{
+document.getElementById("info_box").innerHTML = "<strong>ID:</strong> " + _id + "<br><strong><!--lang_stats_isp-->:</strong> " + _isp + "<br><strong>IP:</strong> " +_ip + "<br><strong>Host:</strong> " +_host + "<br><strong><!--lang_stats_visits-->:</strong> " + _visits + "<br><strong><!--lang_stats_visits_today-->:</strong> " + _visits_day;
+assignPosition(document.getElementById("info_box"));
+document.getElementById("info_box").style.display = "block";
+ibCurrent = _parent;
+}
+else
+{
+document.getElementById("info_box").style.display = "none";
+ibCurrent = null;
+}
+}
+</script>

@@ -1,0 +1,170 @@
+/*
+  --------------
+  PÁGINAS ESPECÍFICAS
+  --------------
+*/
+
+
+/*
+  --------------
+  ELEMENTOS e CLASSES
+  --------------
+*/
+
+
+/* ------- CATEGORIA ------- */
+aside.coluna + section {
+  header {
+    h2 { padding: 5px 20px; font-size: 2.87rem; }
+  }
+}
+
+
+/* ------- PRODUTO ------- */
+.detalhes-produto {
+  .imagem { width: 430px;
+    & > div { margin-bottom: 45px; margin-left: 15px; }
+    #ampliada { height: 400px; }
+    p { display: block; margin-top: 50px; }
+    .swiper-slide { padding: 5px 15px;
+      &.swiper-slide-active img { border-color: $cinza; }
+      .active img { border-color: $vermelho; }
+    }
+    span[role] { margin-top: -7px; }
+    .seguinte { right: 0; }
+  }
+  h2[itemprop] { width: calc(100% - 480px); }
+  .dados { margin-left: 480px; }
+  [itemprop=offers], .compra, .cep { margin-left: 0; }
+  [itemprop=offers], .compra { float: left; }
+  [itemprop=offers] { width: 430px; }
+  ul.parcelas { column-gap: 60px; }
+  .compra { width: 100%; }
+  .indique + .dropdown { position: absolute; width: 380px; margin-left: 100px; z-index: 5;
+    p { margin-bottom: $espaco; }
+  }
+} // .detalhes-produto
+
+
+/* ------- SEUS DADOS ------- */
+form.conta { float: left; width: 500px; }
+
+form.conta + form.alterar-senha { float: right; }
+form.alterar-senha { width: 320px; padding-right: 50px; box-sizing: content-box;
+  li { display: block; margin-right: 0; }
+  input { width: 100%; }
+  input[type=checkbox] { width: auto; }
+}
+
+
+/* ------- FALE CONOSCO ------- */
+form.contato {
+  fieldset { float: left; }
+  .google-maps, .contatos { margin-left: 600px; }
+}
+
+
+/* ------- CARRINHO DE COMPRAS ------- */
+.carrinho {
+
+  .topo { height: 80px; padding: 20px 0 0;
+    .limites { padding-top: 0;
+      &:before { display: none; }
+    }
+    h1 { position: static; float: left; height: auto; }
+    ul.contatos { position: static; float: right; padding-top: 8px;
+      li { margin-bottom: 0; }
+    }
+  } // .topo
+
+  .conteudo {
+    header { margin-bottom: $espaco;
+      h2 { float: left; }
+      .passos { text-align: right; }
+    }
+
+    table.compras {
+      thead {
+        th { font-size: 1.06rem; }
+      }
+      tbody {
+        th {
+          p { margin-left: 80px; }
+        }
+        td { min-width: 150px; }
+      }
+    } // table.compras
+
+    div.cep { margin-bottom: $espaco; }
+
+    .total { width: 230px;
+      tfoot {
+        th, td { padding-top: 20px; padding-bottom: 20px; }
+      }
+    }
+  } // .conteudo
+
+  .rodape {
+    .limites { padding-bottom: $espaco / 2; }
+    .seguranca { margin-right: 100px;
+      li { margin: 0 $espaco / 2 0 0; }
+    }
+  } // .rodape
+
+} // .carrinho
+
+
+  /* ------- LOGIN ------- */
+  .carrinho {
+    form.novo-cliente, form.login { padding: $espaco; }
+  } // .carrinho
+
+
+  /* ------- PAGAMENTO ------- */
+  .carrinho {
+    .resumo-pedido, fieldset.opcoes-entrega, fieldset.formas { margin-bottom: 45px; overflow: hidden; }
+    .resumo-pedido {
+      div.esquerda, div.direita { max-width: none; margin-bottom: 45px; }
+      div.esquerda { max-width: 50%; }
+      div.direita { width: 420px; }
+      h3, h4 { font-size: 1.43rem; }
+      h3 { margin-bottom: $espaco; }
+      table {
+        tbody tr:last-child {
+          th, td { padding-bottom: 30px; }
+        }
+        tfoot {
+          th, td { text-align: right; }
+          th { width: 85%; }
+          tr:first-child {
+            th, td { padding-top: 30px; }
+          }
+        }
+
+        &.compras.tablesaw-stack {
+          tbody {
+            th p { margin-left: 0; }
+            td { text-align: center;
+              &:last-child { text-align: right; }
+            }
+          }
+        }
+      }
+    }
+    fieldset.opcoes-entrega, fieldset.formas {
+      li { display: inline-block; width: auto; text-align: center; vertical-align: top; }
+    }
+
+    fieldset.opcoes-entrega {
+      img { margin: 0 auto 10px; }
+    }
+  } // .carrinho
+
+
+  /* ------- CONFIRMAÇÃO ------- */
+  .carrinho {
+    .confirmacao { position: relative; padding-right: 420px;
+      h3 { font-size: 2.25rem; }
+      .duvidas { position: absolute; top: 0; right: 0; width: 220px; }
+    }
+  } // .carrinho
