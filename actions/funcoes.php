@@ -542,9 +542,9 @@
 		$mail->IsSMTP(); // Define que a mensagem será SMTP
 
 		try {
-			$mail->Host = EMAIL_IBOLT_SMTP; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
-			$mail->SMTPAuth   = true;  // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
-			$mail->Port       = PORTA_IBOLT_SMTP; //  Usar 587 porta SMTP
+			$mail->Host 	= EMAIL_IBOLT_SMTP; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
+			$mail->SMTPAuth = true;  // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
+			$mail->Port     = PORTA_IBOLT_SMTP; //  Usar 587 porta SMTP
 			$mail->Username = USUARIO_IBOLT_EMAIL; // Usuário do servidor SMTP (endereço de email)
 			$mail->Password = SENHA_IBOLT_EMAIL; // Senha do servidor SMTP (senha do email usado)
 		 

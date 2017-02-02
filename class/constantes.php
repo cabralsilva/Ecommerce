@@ -7,9 +7,9 @@
 	define("NOME_PLANDER_EMAIL", "PLANDER.COM");
 
 	
-	define("EMAIL_IBOLT_SMTP", "smtp.ibolt.com.br");
+	define("EMAIL_IBOLT_SMTP", "smtp.iboltsys.com.br");
 	define("PORTA_IBOLT_SMTP", 587);
-	define("USUARIO_IBOLT_EMAIL", "daniel.cabral@ibolt.com.br");
+	define("USUARIO_IBOLT_EMAIL", "log@iboltsys.com.br");
 	define("SENHA_IBOLT_EMAIL", "ib@017*");
 	
 	define("UrlWs", "http://177.185.11.244:8080/wshomo/");
