@@ -28,9 +28,6 @@
 				'Processo' => "Carrinho abandonado",
 				'Editar' => "0"
 			 );
-
-
-
 		}else if ($_acao=="editar"){
 			//Busca o pedido existente
 			$_pedido = array(

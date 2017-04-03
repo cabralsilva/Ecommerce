@@ -78,7 +78,7 @@
 		}
 	}
 	
-	if (@$_SESSION["PEDIDO"]["USUARIO"]!=""){
+	if (@$_SESSION["PEDIDO"]["USUARIO"]!="" && @$_SESSION["PEDIDO"]["USUARIO"]!="NOVO"){
 		$_nomeUsuario = explode(" ", $_SESSION[@$_SESSION["PEDIDO"]["USUARIO"]]["nome_principal"]);
 		$_nomeUsuario = $_nomeUsuario[0];
 	}else{
@@ -108,7 +108,7 @@
       <li><a href="<?php echo URL; ?>faleConosco" title="Visitar a página Fale Conosco">Fale Conosco</a></li>
     </ul>
     <ul class="contatos">
-      <li><a href="javascript:void(window.open('http://www.plander.com.br/livezilla/chat.php?a=34169','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" title="Visitar o Atendimento Online"><svg width="23px" height="20px"><use xlink:href="#icone-atendimento" class="icone" /></svg> Atendimento Online</a></li>
+<!--       <li><a href="javascript:void(window.open('http://www.plander.com.br/livezilla/chat.php?a=34169','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" title="Visitar o Atendimento Online"><svg width="23px" height="20px"><use xlink:href="#icone-atendimento" class="icone" /></svg> Atendimento Online</a></li> -->
       <li class="telefone"><strong><svg width="20px" height="20px"><use xlink:href="#icone-telefone" class="icone" /></svg> Televendas | <?php echo TELEFONE; ?></strong></li>
       <li class="whatsapp"><strong><img src="<?php echo URL; ?>imagens/icone-whatsapp.png" alt="WhatsApp"> <?php echo CELULAR; ?></strong></li>
     </ul>
@@ -301,27 +301,31 @@
         </li>
       </ul>
     </nav>
-
+    
     <div class="drop conta">
-      <a href="javascript:void(0);" title="Ver detalhes da conta">Olá <strong><?php echo $_nomeUsuario; ?></strong>. <span>Sua conta <svg width="9px" height="5px"><use xlink:href="#icone-seta-baixo" class="icone" /></svg></span></a>
-      <div class="dropdown">
-      	<?php
-	      	if (@$_SESSION["PEDIDO"]["USUARIO"]!="") {
-	    ?>
-		        <ul>
-		          <li><a href="<?php echo URL; ?>carrinhoCadastro" title="Ver detalhes de sua conta">Sua conta <em>Verifique e edite suas informações</em></a></li>
-		          <!--<li><a href="#" title="Ver detalhes de seus pedidos">Seus pedidos <em>Histórico das compras realizadas</em></a></li>-->
-		        </ul>
-		<?php
-      		}else{
-      	?>
-		        <!-- itens a serem exibidos caso o usuário não esteja logado -->
-		        <!-- <a href="login.html" class="botao" title="Entrar em sua conta">Entrar <svg width="8px" height="15px"><use xlink:href="#icone-seta" class="icone" /></svg></a> -->
-		        <!-- <p>Novo cliente? <a href="cadastro.html" title="Faça seu cadastro">Faça seu cadastro</a>.</p> -->
-		 <?php
-      		}
-      	 ?>  
-      </div>
+    	<?php if (isset($_SESSION["PEDIDO"]["USUARIO"])) {?>
+     	  <a href="<?= URL ?>painel" title="Ver detalhes da conta">Olá <strong><?= $_nomeUsuario ?>.</strong> <span>Sua conta <svg width="9px" height="5px"><use xlink:href="#icone-seta-baixo" class="icone" /></svg></span></a>
+	      <div class="dropdown">
+	        <ul>
+	          <li><a href="<?= URL ?>painel/pedidos" title="Ver detalhes da conta">Sua conta <em>Acompanhe seus pedidos e edite suas informações</em></li>
+	        </ul>
+	
+	        <!-- itens a serem exibidos caso o usuário não esteja logado -->
+	        <a href="<?= URL ?>painel/loginPainel" class="botao" title="Entrar em sua conta">Entrar <svg width="8px" height="15px"><use xlink:href="#icone-seta" class="icone" /></svg></a>
+	      </div>
+    	<?php }else{?>
+    	  <a href="<?= URL ?>painel/loginPainel" title="Ver detalhes da conta">Olá <strong>Visitante.</strong> <span>Sua conta <svg width="9px" height="5px"><use xlink:href="#icone-seta-baixo" class="icone" /></svg></span></a>
+	      <div class="dropdown">
+	        <ul>
+	          <li>Sua conta <em>Acompanhe seus pedidos e edite suas informações</em></li>
+	        </ul>
+	
+	        <!-- itens a serem exibidos caso o usuário não esteja logado -->
+	        <a href="<?= URL ?>painel/loginPainel" class="botao" title="Entrar em sua conta">Entrar <svg width="8px" height="15px"><use xlink:href="#icone-seta" class="icone" /></svg></a>
+	        <p>Novo cliente? <a href="<?= URL ?>painel/loginPainel" title="Faça seu cadastro">Faça seu cadastro</a>.</p>
+	      </div>
+    	<?php }?>
+      
     </div>
 
     <div class="drop carrinho">

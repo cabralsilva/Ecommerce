@@ -2,10 +2,14 @@
 <aside class="coluna">
   <div>
   	<?php
-  		$_dep = @$_GET["depar"]!=""?@$_GET["depar"]:"Corda";
+  		$_dep = $_GET["depar"]!=""?$_GET["depar"]:"Corda";
   		
 		$_tipos = array_keys($_SESSION["GRUPO"][$_dep]);
+// 		if(isset($_SESSION["GRUPO"][$_dep]))
+// 			$_tipos = array_keys($_SESSION["GRUPO"][$_dep]);
 		
+		print_r($_tipos);
+
 		for ($_x=0; $_x < count($_tipos); $_x++) {
 			echo "<h3>";
 			echo "<a href=\"" . URL . "produtos/tipo/" . removerAcento($_dep) . "/" . removerAcento($_tipos[$_x]) . "\" title=\"Ver produtos do tipo " . $_tipos[$_x] . "\">";

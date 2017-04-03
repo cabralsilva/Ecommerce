@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" height="20px" width="24px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 20">
+ <title>credit2</title> 
+ <g id="Desktop" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+  <g id="Carrinho" transform="translate(-1069 -110)" fill="currentColor" sketch:type="MSArtboardGroup">
+   <g id="carrinho" transform="translate(30 110)" sketch:type="MSLayerGroup">
+    <g id="passos" sketch:type="MSShapeGroup" transform="translate(777)">
+     <g id="credit2-+-Pagamento" transform="translate(242)">
+      <g id="credit2" transform="translate(20)">
+       <g id="Group">
+        <path id="Shape" d="m2.6628 8.8842c0-0.9626 0.7756-1.7456 1.729-1.7456h16.741l-1.981-6.3317c-0.185-0.5885-0.81-0.91767-1.396-0.73064l-16.955 5.4114c-0.58582 0.1871-0.90938 0.818-0.72414 1.409l2.5884 8.2643v-6.2768h-0.0025z"/>
+        <path id="Shape" d="m3.4038 18.999c0 0.551 0.4421 0.997 0.988 0.997h18.03c0.546 0 0.988-0.446 0.988-0.997v-1.347h-20.006l-0.0002 1.347z"/>
+        <path id="Shape" d="m23.41 8.8842c0-0.5511-0.442-0.9975-0.988-0.9975h-1.055-16.975c-0.5461 0-0.9882 0.4464-0.9882 0.9975v6.8958h4.9324 15.074v-6.8958z"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

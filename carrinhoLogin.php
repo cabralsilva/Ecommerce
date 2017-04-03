@@ -9,8 +9,13 @@
 	
 	$_tituloPagina = "Identificação - Carrinho de Compras";
 	$_carrinho = true;
-	
-	if (@$_SESSION["PEDIDO"]["USUARIO"]!=""){ //tudo se baseia nessa variável agora
+	if (@isset ($_SESSION ["CLIENTE"]) && !isset($_SESSION["PEDIDO"]["codigo"])){ //já está logado pelo painel, fazer login somente pelo ID do Cliente
+		
+		require_once 'actions/IntegracaoPainel.php';
+		$login = new loginCarrinho();
+		$login->logarCarrinhoByIdCliente($_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["codigo"]);
+		die();
+	}elseif (@$_SESSION["PEDIDO"]["USUARIO"]!="" && @$_SESSION["PEDIDO"]["USUARIO"]=="CADASTRADO"){ //tudo se baseia nessa variável agora
 		$_chaves = array_keys($_SESSION["CART"]);
 		$items = array();
 		for ($_i=0; $_i<count($_chaves); $_i++){
@@ -24,8 +29,8 @@
 		  array_push($items, $item);
     	}
 		$pedido = array(
-		  'codigoPedido' => $_SESSION["PEDIDO"]["codigo"],
-		  'lstItems' => $items,
+			'codigoPedido' => $_SESSION["PEDIDO"]["codigo"],
+			'lstItems' => $items,
 			'usr' => 'pdroqtl',
 			'pwd' => 'jck9com*'
 		);
@@ -50,10 +55,10 @@
 		}
 		echo "<script> window.location.href='" . URL_SSL . "carrinhoPagamento'; </script>";
 		die();
-	}else if (@$_SESSION["email"]!="" && @$_GET["voltar"]==""){
+	}elseif (@$_SESSION["email"]!="" && @$_GET["voltar"]==""){
 		echo "<script> window.location.href='" . URL_SSL . "carrinhoCadastro'; </script>";
 		die();
-	}else if (count(@$_SESSION["CART"])==0) {
+	}elseif (count($_SESSION["CART"])==0) {
 		echo "<script> alert('Carrinho vazio.'); </script>";
 		echo "<script> parent.window.location.href='" . URL_SSL . "produtos'; </script>";
 		die();
@@ -123,7 +128,16 @@ include_once("analise/analytics.php");*/
           <button type="submit">Continuar <svg width="8px" height="15px"><use xlink:href="#icone-seta" class="icone" /></svg></a>
         </fieldset>
       </form>
-	  
+	  	<div class="novo-cliente">
+			<fieldset>
+				<h3>Comprar sem cadastro</h3>
+				<p>Realize sua compra sem criar login em nosso site.</p>
+				<a href="carrinhoPagamentoSemCadastro" class="botao continuar"
+					title="Realizar a compra sem cadastro">Comprar sem cadastro <svg
+						width="8px" height="15px">
+						<use xlink:href="#icone-seta" class="icone" /></svg></a>
+			</fieldset>
+		</div>
 	  <a href="<?php echo URL_SSL; ?>carrinho" class="botao voltar" title="Voltar ao carrinho de compras"><svg width="8px" height="15px"><use xlink:href="#icone-seta" class="icone" /></svg> Voltar</a>
     </div>
     <!-- fecha .limites -->

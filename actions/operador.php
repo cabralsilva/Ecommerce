@@ -1,9 +1,9 @@
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8">
 <?php
 	
-	require_once("../class/constantes.php");
-	require_once("../class/filemaker.class.php");
-	require_once("funcoes.php");
+// 	require_once("../class/constantes.php");
+// 	require_once("../class/filemaker.class.php");
+// 	require_once("funcoes.php");
 	require_once("../actions/funcoesWS.php");
 	require_once("../class/PHPMailer-master/class.phpmailer.php");
 	
@@ -42,7 +42,8 @@
 					}
 				}else {
 					echo "<script> alert('Cadastro realizado.'); </script>";
-					echo "<script> parent.window.location.href='../index'; </script>";
+					echo "<script> parent.window.location.href='".URL."index'; </script>";
+					die();
 				}
 			
 			} else{
@@ -50,7 +51,7 @@
 				echo "<script> parent.window.location.href='".URL."index'; </script>";
 				die;
 			}
-			echo "<script> parent.window.location.href='".URL."index'; </script>";
+// 			echo "<script> parent.window.location.href='".URL."index'; </script>";
 		}
 	}
 ?>

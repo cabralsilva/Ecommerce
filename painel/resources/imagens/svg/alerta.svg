@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" height="46px" width="49px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 46">
+ <title>Shape</title>
+ <g id="Desktop" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+  <g id="Produto" transform="translate(-999 -482)" fill="currentColor" sketch:type="MSArtboardGroup">
+   <g id="detalhes" transform="translate(28 374)" sketch:type="MSLayerGroup">
+    <g id="indisponível" sketch:type="MSShapeGroup" transform="translate(971 108.5)">
+     <g id="triangle38">
+      <g id="Group">
+       <path id="Shape" d="m47.879 40.902l-21.04-39.303c-0.524-0.9823-1.552-1.599-2.671-1.599h-0.003c-1.119 0-2.144 0.61372-2.672 1.5963l-21.134 39.303c-0.50293 0.943-0.4757 2.074 0.07017 2.981 0.54886 0.91 1.5375 1.469 2.6019 1.469h42.17c1.068 0 2.053-0.556 2.602-1.469 0.549-0.91 0.577-2.041 0.076-2.978zm-23.714-1.599c-1.674 0-3.033-1.355-3.033-3.024 0-1.668 1.359-3.023 3.033-3.023 1.671 0 3.032 1.355 3.032 3.023 0 1.669-1.358 3.024-3.032 3.024zm3.035-12.045c0 1.672-1.361 3.023-3.032 3.023-1.674 0-3.033-1.351-3.033-3.023v-12.093c0-1.669 1.359-3.024 3.033-3.024 1.671 0 3.032 1.355 3.032 3.024v12.093z"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

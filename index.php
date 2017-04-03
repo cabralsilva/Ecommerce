@@ -63,10 +63,10 @@
 <?php
 include("includes/headerHtml.php");
 
-include_once("analise/rastreamento.php"); 
+// include_once("analise/rastreamento.php"); 
 
-include_once("analise/googleSearchConsole.php");
-include_once("analise/analytics.php");
+// include_once("analise/googleSearchConsole.php");
+// include_once("analise/analytics.php");
 ?>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">

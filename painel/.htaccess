@@ -1,0 +1,24 @@
+Options -Indexes
+DirectoryIndex views/loginPainel.php
+
+RewriteEngine on
+	RewriteRule ^views/?$ views/loginPainel.php [NC]
+	RewriteRule ^controllers/?$ views/loginPainel.php [NC]
+	RewriteRule ^services/?$ views/loginPainel.php [NC]
+	RewriteRule ^models/?$ views/loginPainel.php [NC]
+	RewriteRule ^resources/?$ views/loginPainel.php [NC]
+	RewriteRule ^util/?$ views/loginPainel.php [NC]
+	RewriteRule ^editarCadastro/?$ views/cadastroPainel.php [NC]
+	RewriteRule ^editarpf/?$ views/cadastroPainel.php [NC]
+	RewriteRule ^editarpj/?$ views/cadastropjPainel.php [NC]
+	RewriteRule ^pedidos/?$ views/painel.php [NC]
+	RewriteRule ^alterarsenha/?$ views/senhaPainel.php [NC]
+	RewriteRule ^logout/?$ views/logout.php [NC]
+	RewriteRule ^loginPainel/?$ views/loginPainel.php [NC]
+	
+	#RewriteRule ^([a-z]+)/?$ views/login.php?sistema=$1 [NC]
+	
+	
+	
+	
+	

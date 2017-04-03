@@ -1,9 +1,15 @@
 <?php
 	
-	define("EMAIL_PLANDER_SMTP", "smtp.plander.com.br");
+// 	define("EMAIL_PLANDER_SMTP", "smtp.plander.com.br");
+// 	define("PORTA_PLANDER_SMTP", 587);
+// 	define("USUARIO_PLANDER_EMAIL", "plander@plander.com.br");
+// 	define("SENHA_PLANDER_EMAIL", "pLand&er@20!6");
+// 	define("NOME_PLANDER_EMAIL", "PLANDER.COM");
+
+	define("EMAIL_PLANDER_SMTP", "smtp.iboltsys.com.br");
 	define("PORTA_PLANDER_SMTP", 587);
-	define("USUARIO_PLANDER_EMAIL", "plander@plander.com.br");
-	define("SENHA_PLANDER_EMAIL", "pLand&er@20!6");
+	define("USUARIO_PLANDER_EMAIL", "log@iboltsys.com.br");
+	define("SENHA_PLANDER_EMAIL", "ib@017*");
 	define("NOME_PLANDER_EMAIL", "PLANDER.COM");
 
 	
@@ -12,19 +18,19 @@
 	define("USUARIO_IBOLT_EMAIL", "log@iboltsys.com.br");
 	define("SENHA_IBOLT_EMAIL", "ib@017*");
 	
-	define("UrlWs", "http://177.185.11.244:8080/wshomo/");
+	define("UrlWs", "http://192.168.100.11:8090/ws/");
 	define("JUROS", 0.029);
 	//define("URL", "http://localhost/www/plander_novo_2016/plander/");
-	define("URL", "http://localhost:8080/plander/");
+	define("URL", "http://192.168.100.11:8080/plander/");
 	
-	define("SSL", 1); //DEIXAR COMO 1 CASO FOR UM AMBIENTE QUE TENHA CRIPTOGRAFIA, NAO SEJA TESTE
+	define("SSL", 0); //DEIXAR COMO 1 CASO FOR UM AMBIENTE QUE TENHA CRIPTOGRAFIA, NAO SEJA TESTE
 	
 	if (SSL==1)
-		define("URL_SSL", "http://localhost:8080/plander/");
+		define("URL_SSL", "http://192.168.100.11:8080/plander/");
 		//DEFINE("URL_SSL", "https://plander2.websiteseguro.com/");
 		//DEFINE("URL_SSL", "http://localhost/www/plander_novo_2016/planderSSL/");
 	else
-		define("URL_SSL", "");
+		define("URL_SSL", "http://192.168.100.11:8080/plander/");
 	
 	//meta tags
 	define("DESCRIPTION", "Plander.");

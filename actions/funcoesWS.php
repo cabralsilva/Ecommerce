@@ -1,6 +1,6 @@
 <?php
-  include __DIR__ . "\../class/constantes.php";
-  include __DIR__ . "\../actions/funcoes.php";
+//   include __DIR__ . "\../class/constantes.php";
+//   include __DIR__ . "\../actions/funcoes.php";
 	
   function sendWsJson($json_object, $ws){
     $http = stream_context_create(array(
@@ -13,9 +13,9 @@
       )
     ));
     // Realize comunicação com o servidor
-    $envelope = @file_get_contents($ws, null, $http);            
+    $envelope = file_get_contents($ws, false, $http);  
     $resposta = json_decode($envelope);  //Parser da resposta Json
-    
+//     print_r($ws);
     if ($envelope === FALSE){
       $_conteudo = "<strong><u>Mensagem de Log Erro do site www.plander.com.br</u></strong><br><br><br>";
       $_conteudo .= "<strong>Descrição: </strong>Não foi possível localizar o WS ou o serviço solicitado na url <u>" . $ws . "</u><br><br>";

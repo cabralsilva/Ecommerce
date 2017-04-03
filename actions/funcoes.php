@@ -13,7 +13,7 @@
 	* @return string A senha gerada
 	*/
 	@session_start();		
-	if (!empty($_POST)) {
+	if (isset($_POST["funcao"])) {
 		if ($_POST["funcao"] == 'removerAcento') {
 			echo removerAcento($_POST["busca"]);
 		}
@@ -514,8 +514,8 @@
 		    //Campos abaixo são opcionais 
 		    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		    if (substr($subject, 0, 6) == "Pedido"){
-		    	$mail->AddCC(USUARIO_PLANDER_EMAIL, NOME_PLANDER_EMAIL); // Copia para PLANDER - PRODUÇÃO
-		    	//$mail->AddCC(USUARIO_IBOLT_EMAIL, NOME_PLANDER_EMAIL); // Copia para IBOLT - HOMOLOGAÇÃO E DESENVOLVIMENTO
+		    	//$mail->AddCC(USUARIO_PLANDER_EMAIL, NOME_PLANDER_EMAIL); // Copia para PLANDER - PRODUÇÃO
+		    	$mail->AddCC(USUARIO_IBOLT_EMAIL, NOME_PLANDER_EMAIL); // Copia para IBOLT - HOMOLOGAÇÃO E DESENVOLVIMENTO
 		    }
 		    //$mail->AddCC(USUARIO_IBOLT_EMAIL, 'iBolt Site Plander');
 		    //$mail->AddBCC('destinatario_oculto@dominio.com.br', 'Destinatario2`'); // Cópia Oculta

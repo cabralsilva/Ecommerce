@@ -48,13 +48,96 @@
 				'pwd' => 'jck9com*'
     		);
 
-    		$objJson = json_encode($arrayPedido);    		
+    		$objJson = json_encode($arrayPedido);    	
+    		print_r($objJson);
     		$return = sendWsJson($objJson, UrlWs . "novologin");
 			if ($return->codStatus != 1) {
 				if($return != null){
 					switch ($return->codStatus) {
 						case 2:
 							echo "<script> alert('Falha no Login: $return->msg.'); </script>";
+							break;
+						case 3:
+							$_SESSION["PEDIDO"]["USUARIO"] = "CADASTRADO";
+				
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]] = array();
+							
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["codigo"] = $return->model->fkCliente->codigoCliente;
+							
+							if ($return->model->fkCliente->Pessoa == 0) {
+								$_cadastradoCpf = $return->model->fkCliente->Cpf;
+								$_nomeEntrega = $return->model->fkCliente->Nome;
+									
+							} elseif ($return->model->fkCliente->Pessoa == 0) {
+								$_cadastradoCnpj = $return->model->fkCliente->Cnpj;
+								$_nomeEntrega = $return->model->fkCliente->RazaoSocial;
+							} else{
+								$_cadastradoCnpj = "";
+								$_nomeEntrega = "";
+							}
+
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["pessoa"] = $return->model->fkCliente->Pessoa == 1 ? "juridica":"fisica";
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["nome_principal"] = $_nomeEntrega;
+							
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["nome"] = $return->model->fkCliente->Nome;
+							
+							$_dataNascimento = implode('-', array_reverse(explode('/', $return->model->fkCliente->DataNascimento)));
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["data_nascimento"] = $_dataNascimento;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["data_nascimento_formatada"] = date("d/m/Y", strtotime($_dataNascimento));
+							
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["cpf"] = $return->model->fkCliente->Cpf;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["rg"] = $return->model->fkCliente->Rg;
+							
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["razao_social"] = $return->model->fkCliente->RazaoSocial;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["cnpj"] = $return->model->fkCliente->Cnpj;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["ie"] = $return->model->fkCliente->InscricaoEstadual;
+							
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["email"] = $return->model->fkCliente->Email;
+							
+							$_cep[0] = substr($return->model->fkCliente->Cep, 0, 5);
+							$_cep[1] = substr($return->model->fkCliente->Cep, -3, 3);
+							
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["cep1"] = $_cep[0];
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["cep2"] = $_cep[1];
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["cep_completo"] = $_cep[0] . $_cep[1];
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["cep_completo_formatado"] = $_cep[0] . "-" . $_cep[1];
+							
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["endereco"] = $return->model->fkCliente->Logradouro;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["numero"] = $return->model->fkCliente->Numero;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["complemento"] = $return->model->fkCliente->Complemento;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["bairro"] = $return->model->fkCliente->Bairro;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["cidade"] = $return->model->fkCliente->Municipio;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["uf"] = $return->model->fkCliente->Uf;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["ddd1"] = $return->model->fkCliente->Ddd1;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["telefone1"] = $return->model->fkCliente->Telefone1;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["ddd2"] = $return->model->fkCliente->Ddd2;
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["telefone2"] = $return->model->fkCliente->Telefone2;
+							
+							$_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["informacoes_referencia"] = $return->model->fkCliente->InformacoesReferencia;
+
+							$_SESSION["ENTREGA"]["cep1"] = $_cep[0];
+							$_SESSION["ENTREGA"]["cep2"] = $_cep[1];
+							$_SESSION["ENTREGA"]["cep_completo"] = $_cep[0] . $_cep[1];
+							$_SESSION["ENTREGA"]["cep_completo_formatado"] = $_cep[0] . "-" . $_cep[1];
+							
+							$_SESSION["ENTREGA"]["nome"] = $_nomeEntrega;
+							
+							$_SESSION["ENTREGA"]["endereco"] = $return->model->fkCliente->Logradouro;
+							$_SESSION["ENTREGA"]["numero"] = $return->model->fkCliente->Numero;
+							$_SESSION["ENTREGA"]["complemento"] = $return->model->fkCliente->Complemento;
+							$_SESSION["ENTREGA"]["bairro"] = $return->model->fkCliente->Bairro;
+							$_SESSION["ENTREGA"]["cidade"] = $return->model->fkCliente->Municipio;
+							$_SESSION["ENTREGA"]["uf"] = $return->model->fkCliente->Uf;
+							$_SESSION["ENTREGA"]["informacoes_referencia"] = $return->model->fkCliente->InformacoesReferencia;
+							
+							
+							$pedido['codigoPedido'] = $return->model->codigoPedido;
+
+							$_SESSION["PEDIDO"]["codigo"] = $pedido['codigoPedido'];
+							$_SESSION["PEDIDO"]["email"] = $_SESSION[$_SESSION["PEDIDO"]["USUARIO"]]["email"];
+							$_SESSION["MSG_INCOMPLETO"] = $return->msg;
+							echo "<script> parent.window.location.href='../carrinhoCadastro'; </script>";
+							die();
 							break;
 						default:
 							$_conteudo = "<strong><u>Mensagem de Log Erro do site www.plander.com.br</u></strong><br><br><br>";
@@ -144,7 +227,6 @@
 				$_SESSION["ENTREGA"]["cidade"] = $return->model->fkCliente->Municipio;
 				$_SESSION["ENTREGA"]["uf"] = $return->model->fkCliente->Uf;
 				$_SESSION["ENTREGA"]["informacoes_referencia"] = $return->model->fkCliente->InformacoesReferencia;
-				
 				
 				$pedido['codigoPedido'] = $return->model->codigoPedido;
 
@@ -261,13 +343,13 @@
 					$destinatarios = $return->model->Email;
 					$nomeDestinatario = $return->model->Nome;
 					$assunto = "Solicitação de senha";
-					$_conteudo = "<strong>Solicita&ccedil;&atilde;o de senha</strong><br><br><br>";
+					$_conteudo = "<strong>Solicitação de senha</strong><br><br><br>";
 					
 					if ($return->model->senhaCliente != "") {
-						$_conteudo .= "Ol&aacute; <strong>" . $return->model->Nome . "</strong>, estamos enviando sua senha conforme foi solicitado.<br><br>";
-						$_conteudo .= "Usu&aacute;rio: <strong>" . $return->model->Email . "</strong><br>";
+						$_conteudo .= "Olá <strong>" . $return->model->Nome . "</strong>, estamos enviando sua senha conforme foi solicitado.<br><br>";
+						$_conteudo .= "Usuário: <strong>" . $return->model->Email . "</strong><br>";
 						$_conteudo .= "Senha: <strong>" . $return->model->senhaCliente . "</strong><br><br><br>";
-						$_conteudo .= "Agradecemos a prefer&ecirc;ncia<br>PLANDER.";
+						$_conteudo .= "Agradecemos a preferência<br>PLANDER.";
 						@$_POST['mensagem'] = $_conteudo;
 								
 					} else {
@@ -346,5 +428,5 @@
 			echo "<script> alert('Insira seu e-mail.'); </script>";
 			echo "<script> window.close(); </script>";  
 		}
-	}			  
+	}
 ?>

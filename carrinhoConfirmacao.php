@@ -19,13 +19,13 @@
 <head>
 <?php
 //neste arquivo a chamada do analytics  está antes do headerHtmlSSL pois estava dando erro no analytics, e como neste arquivo não ocorreu erro com o favicon a ordem foi invertida
-include_once("analise/analytics.php");
+@include_once("analise/analytics.php");
 
 include("includes/headerHtmlSSL.php");
 
-include_once("analise/rastreamento.php"); 
+@include_once("analise/rastreamento.php"); 
 
-include_once("analise/googleSearchConsole.php");
+@include_once("analise/googleSearchConsole.php");
 ?>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -177,8 +177,8 @@ include_once("analise/googleTagManager.php");
 </script>
 <?php
 
-	include_once("analise/transacaoEcommerce.php");
-	include_once("analise/adwords.php");
+	@include_once("analise/transacaoEcommerce.php");
+	@include_once("analise/adwords.php");
 
 	//if (DEVELOP==false){
 		/*

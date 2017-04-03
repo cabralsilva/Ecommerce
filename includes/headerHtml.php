@@ -13,3 +13,14 @@
 <link href="<?php echo URL; ?>css/impressao.css?v=1" rel="stylesheet" media="print" />
 <link rel="icon" type="image/png" href="<?php echo URL; ?>imagens/favicon.png" />
 <script src="<?php echo URL; ?>bower_components/picturefill/dist/picturefill.min.js" async></script>
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '38d1a11a2063d5c4308cff74ff4346c90bd2b515';
+window.smartsupp||(function(d) {
+	var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+	s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+	c.type='text/javascript';c.charset='utf-8';c.async=true;
+	c.src='//www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>

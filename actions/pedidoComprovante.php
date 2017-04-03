@@ -74,7 +74,8 @@
 						die();
 					}
 				}else{
-					session_destroy();
+// 					session_destroy();
+					unset($_SESSION['CART']);
 					if (isset($_GET["andamento"]) == null){
 						header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
 					}else 
@@ -101,7 +102,8 @@
 			}
 			
 		}else{
-			session_destroy();
+// 			session_destroy();
+			unset($_SESSION['CART']);
 			if (isset($_GET["andamento"]) == null){
 				header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
 			}
@@ -348,13 +350,17 @@
 
 			if (isset($_GET["andamento"]) != null)
 				echo "Email de acompanhamento do pedido enviado em: " . date("d/m/Y G:i:s") . "\n";
-			session_destroy();
+			
+// 			session_destroy();
+			unset($_SESSION['CART']);
 		}else{
-			session_destroy();
+// 			session_destroy();
+			unset($_SESSION['CART']);
 			echo $_html;
 		}
 	}else{
-		session_destroy();
+// 		session_destroy();
+		unset($_SESSION['CART']);
 		if (isset($_GET["andamento"]) == null){
 			//VEIO DO SITE
 			header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
