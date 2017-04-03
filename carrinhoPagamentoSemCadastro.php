@@ -154,7 +154,7 @@ if (isset ( $_SESSION ["PEDIDO"] ["USUARIO"] )) { // tudo se baseia nessa variá
 							</section>
 
 							<section class="direita">
-								<h3>Entrega</h3>
+								<h3>Endereço de entrega</h3>
 								<ol>
 									<li class="obrigatorio">
 										<p title="Preencha seu CEP">CEP</p>

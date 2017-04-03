@@ -77,7 +77,7 @@ if (isset($_SESSION ["PEDIDO"]["USUARIO"]) && $_SESSION ["PEDIDO"]["USUARIO"] ==
 							</a>
 					</fieldset>
 				</form>
-
+				 <a href="<?= UrlSite ?>" class="botao voltar" title="Voltar ao carrinho de compras"><svg width="8px" height="15px"><use xlink:href="#icone-seta" class="icone" /></svg> Voltar</a>
 <!-- 				<div class="novo-cliente"> -->
 <!-- 					<fieldset> -->
 <!-- 						<h3>Comprar sem cadastro</h3> -->

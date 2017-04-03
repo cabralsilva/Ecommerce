@@ -49,7 +49,9 @@ include_once("analise/googleTagManager.php");
         <h2>Confirmação</h2>
         <ol class="passos">
           <li class="check"><svg width="24px" height="20px"><use xlink:href="#icone-carrinho" class="icone" /></svg> Carrinho</li>
+          <?php if (!isset($_SESSION["PEDIDO"]["isNoRegister"])){?>
           <li class="check"><svg width="20px" height="20px"><use xlink:href="#icone-usuario" class="icone" /></svg> Identificação</li>
+          <?php }?>
           <li class="check"><svg width="24px" height="20px"><use xlink:href="#icone-cartoes" class="icone" /></svg> Pagamento</li>
           <li class="ativo"><svg width="26px" height="20px"><use xlink:href="#icone-check" class="icone" /></svg> Confirmação</li>
         </ol>

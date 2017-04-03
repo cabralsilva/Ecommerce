@@ -312,6 +312,7 @@
 	
 	        <!-- itens a serem exibidos caso o usuário não esteja logado -->
 	        <a href="<?= URL ?>painel/loginPainel" class="botao" title="Entrar em sua conta">Entrar <svg width="8px" height="15px"><use xlink:href="#icone-seta" class="icone" /></svg></a>
+	      	<p><a href="<?= URL ?>painel/logout" title="Logout">Logout</a></p>
 	      </div>
     	<?php }else{?>
     	  <a href="<?= URL ?>painel/loginPainel" title="Ver detalhes da conta">Olá <strong>Visitante.</strong> <span>Sua conta <svg width="9px" height="5px"><use xlink:href="#icone-seta-baixo" class="icone" /></svg></span></a>

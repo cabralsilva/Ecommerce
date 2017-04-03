@@ -249,6 +249,7 @@
 					echo "<script> alert('Ops, houve uma falha ao finalizar o seu pedido. Tente novamente!'); </script>";
 					
 				}
+				
 				echo "<script> parent.window.location.href='../carrinhoPagamento'; </script>";
 				die();
 			} 
@@ -256,6 +257,7 @@
 			if ($_pedido['FormaPagamento'] == "Boleto"){
 				echo "<script> window.open(\"../boleto/boleto_bradesco.php?id=" . $_pedido['codigoPedido'] . "\",\"janelaBloq\", \"width=800, height=650, top=0, left=0, scrollbars=no, status=no, resizable=no, directories=no, location=no, menubar=no, titlebar=no, toolbar=no\"); </script>";
 			}
+			$_SESSION["PEDIDO"]["isNoRegister"] = 1;
 			echo "<script> window.location.href = '../carrinhoConfirmacao.php'; </script>";
 			die();
 		}else{

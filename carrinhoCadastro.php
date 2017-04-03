@@ -163,7 +163,7 @@ include_once("analise/googleTagManager.php");
       	<input type="hidden" id="pessoa" name="pessoa" value="<?php echo $_pessoa; ?>">
         <fieldset>
           <section id="section_fisica">
-            <h3>Dados pessoais</h3>
+            <h3>Meu cadastro</h3>
             <ol>
               <li class="obrigatorio"><label for="nome-completo">Nome completo</label><input type="text" name="nome-completo" id="nome-completo" value="<?php echo $_nome; ?>"> 
               	<!--<span>Por favor, preencha seu nome</span></li>-->
@@ -194,7 +194,7 @@ include_once("analise/googleTagManager.php");
           </section>
           
           <section id="section_juridica">
-            <h3>Dados da empresa</h3>
+            <h3>Meu cadastro</h3>
             <ol>
               <li class="obrigatorio"><label for="razao-social">Razão social</label><input type="text" name="razao-social" id="razao-social" value="<?php echo $_razaoSocial; ?>">
               	 <!--<span>Por favor, preencha a razão social da empresa</span></li>-->
